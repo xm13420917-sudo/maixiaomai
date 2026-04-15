@@ -1,5 +1,9 @@
 ﻿const PHONE = "18125834755";
 const WHATSAPP = "8618125834755";
+const LEAD_WEBHOOK_TOKEN = "eff13d32-4747-4891-8461-a719c8e4a127";
+const LEAD_WEBHOOK_URL = `https://webhook.site/${LEAD_WEBHOOK_TOKEN}`;
+const LEAD_DASHBOARD_URL = `https://webhook.site/#!/view/${LEAD_WEBHOOK_TOKEN}`;
+
 const PRODUCT_MAP = {
   taishan_small: "精品台山生蚝（小蚝，1.5-2+，400-450个/件）",
   taishan_mid: "精品台山生蚝（中蚝，2.5-3.5，260-320个/件）",
@@ -91,7 +95,7 @@ function buildInquiryMessage(form) {
   const fd = new FormData(form);
   const quoteItems = getQuoteItems().map((id) => PRODUCT_MAP[id] || id);
   const lines = [
-    "【潮州生蚝批发询价】",
+    "【生蚝批发询价】",
     `联系人：${fd.get("name") || ""}`,
     `手机：${fd.get("phone") || ""}`,
     `采购类型：${fd.get("biz_type") || ""}`,
@@ -101,9 +105,41 @@ function buildInquiryMessage(form) {
     `到货时间：${fd.get("delivery_date") || ""}`,
     `备注：${fd.get("remark") || "无"}`,
     `询价单：${quoteItems.length ? quoteItems.join("、") : "未勾选产品"}`,
-    "产地偏好：广东潮州饶平汫洲"
+    "报价规则：默认100斤起发，生蚝肉30斤起发，物流费用自理"
   ];
   return lines.join("\n");
+}
+
+function buildLeadPayload(form) {
+  const fd = new FormData(form);
+  const quoteItems = getQuoteItems().map((id) => PRODUCT_MAP[id] || id);
+  return {
+    created_at: new Date().toISOString(),
+    source: "shenghaopifa.online",
+    page: window.location.pathname,
+    name: (fd.get("name") || "").toString(),
+    phone: (fd.get("phone") || "").toString(),
+    biz_type: (fd.get("biz_type") || "").toString(),
+    city: (fd.get("city") || "").toString(),
+    category: (fd.get("category") || "").toString(),
+    quantity: (fd.get("quantity") || "").toString(),
+    delivery_date: (fd.get("delivery_date") || "").toString(),
+    remark: (fd.get("remark") || "").toString(),
+    quote_items: quoteItems.length ? quoteItems.join(" | ") : "未勾选产品",
+    note: "默认100斤起发，生蚝肉30斤起发，物流费用自理"
+  };
+}
+
+function submitLeadToWebhook(payload) {
+  const body = new URLSearchParams();
+  Object.entries(payload).forEach(([key, value]) => {
+    body.append(key, value ?? "");
+  });
+  return fetch(LEAD_WEBHOOK_URL, {
+    method: "POST",
+    mode: "no-cors",
+    body
+  }).catch(() => null);
 }
 
 function bindAddQuoteButtons() {
@@ -125,12 +161,15 @@ function bindInquiryForm() {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+    const leadPayload = buildLeadPayload(form);
+    submitLeadToWebhook(leadPayload);
+
     const message = buildInquiryMessage(form);
     const encoded = encodeURIComponent(message);
     const waUrl = `https://wa.me/${WHATSAPP}?text=${encoded}`;
     const preview = document.querySelector("#submit-preview");
     if (preview) {
-      preview.textContent = "询价信息已生成，正在打开 WhatsApp；如未安装 WhatsApp，请直接电话/微信联系。";
+      preview.textContent = "询价信息已同步到后台表格，正在打开 WhatsApp；如未安装 WhatsApp，请直接电话/微信联系。";
     }
     window.open(waUrl, "_blank");
   });
@@ -163,10 +202,15 @@ function setYear() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-leads-url]").forEach((el) => {
+    if (el instanceof HTMLAnchorElement) {
+      el.href = LEAD_DASHBOARD_URL;
+      el.textContent = LEAD_DASHBOARD_URL;
+    }
+  });
   renderQuoteCount();
   renderQuoteList();
   bindAddQuoteButtons();
   bindInquiryForm();
   setYear();
 });
-

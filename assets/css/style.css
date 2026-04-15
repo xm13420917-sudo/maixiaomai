@@ -114,8 +114,8 @@ img {
   border-radius: 24px;
   overflow: hidden;
   background:
-    linear-gradient(105deg, rgba(3, 25, 44, 0.85), rgba(8, 53, 84, 0.66) 42%, rgba(11, 79, 120, 0.38)),
-    url("https://images.unsplash.com/photo-1571167369945-3f6f1f68d6ad?auto=format&fit=crop&w=1800&q=80") center/cover;
+    linear-gradient(105deg, rgba(3, 25, 44, 0.8), rgba(8, 53, 84, 0.62) 42%, rgba(11, 79, 120, 0.36)),
+    url("https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=1800&q=80") center/cover;
   color: #fff;
   box-shadow: 0 20px 40px rgba(5, 30, 51, 0.28);
 }
