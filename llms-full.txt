@@ -1,6 +1,6 @@
 # 生蚝产地批发 Full Content Map
 
-Generated from repository revision: ed75637
+Generated from repository revision: 19bd7fb
 
 ## 1. 关于我们 | 汫洲生蚝历史与供应链
 - URL: http://shenghaopifa.online/about.html
