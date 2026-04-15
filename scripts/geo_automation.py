@@ -150,7 +150,6 @@ def generate_geo_feed(root: Path, site_url: str, brand: str, pages: list[dict]) 
         "site": brand,
         "domain": urllib.parse.urlparse(site_url).netloc,
         "revision": current_git_revision(),
-        "generated_at_utc": dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
         "pages": [
             {
                 "title": p["title"],

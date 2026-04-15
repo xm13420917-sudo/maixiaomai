@@ -30,7 +30,7 @@ jobs:
             --ping
 
       - name: Commit generated files on push
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && github.actor != 'github-actions[bot]'
         run: |
           if [[ -n "$(git status --porcelain llms.txt llms-full.txt geo-feed.json sitemap.xml robots.txt indexnow-key.txt)" ]]; then
             git config user.name "github-actions[bot]"
