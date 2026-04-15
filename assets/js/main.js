@@ -1,6 +1,12 @@
 ﻿const PHONE = "18125834755";
 const WHATSAPP = "8618125834755";
 const PRODUCT_MAP = {
+  taishan_small: "精品台山生蚝（小蚝，1.5-2+，400-450个/件）",
+  taishan_mid: "精品台山生蚝（中蚝，2.5-3.5，260-320个/件）",
+  taishan_big: "精品台山生蚝（大蚝，4-6+，150-190个/件）",
+  oyster_big_100: "牡蛎大蚝（100斤/件，400-450个）",
+  oyster_mid_100: "牡蛎中蚝（100斤/件，550-600个）",
+  oyster_small_100: "牡蛎小蚝（100斤/件，800-850个）",
   shell_jz_1: "汫洲原产地带壳大蚝（A+）",
   shell_jz_2: "潮州鲜活带壳生蚝（标准）",
   half_shell_1: "烧烤店专供半壳生蚝",
@@ -163,3 +169,4 @@ document.addEventListener("DOMContentLoaded", () => {
   bindInquiryForm();
   setYear();
 });
+
