@@ -1,0 +1,42 @@
+# 生蚝产地批发 Full Content Map
+
+Generated from repository revision: 9586fe2
+
+## 1. 关于我们 | 汫洲生蚝历史与供应链
+- URL: http://shenghaopifa.online/about.html
+- H1: 关于我们
+- Description: 了解潮州饶平汫洲生蚝历史、养殖优势、供应链能力与团队。
+- Main Sections: 供应链流程 | 团队与服务
+
+## 2. 批发优势 | 新鲜度、价格、物流、售后
+- URL: http://shenghaopifa.online/advantages.html
+- H1: 批发优势 / 为什么选我们
+- Description: 潮州生蚝批发优势：鲜度保障、价格体系、冷链物流、售后机制。
+- Main Sections: 信任元素
+
+## 3. 新闻博客 | 生蚝知识与季节供应
+- URL: http://shenghaopifa.online/blog.html
+- H1: 新闻 / 博客
+- Description: 潮州生蚝知识、季节供应节奏、菜谱推荐与采购建议。
+
+## 4. 联系我们 | 在线询价 | 潮州生蚝批发
+- URL: http://shenghaopifa.online/contact.html
+- H1: 联系我们 / 在线询价
+- Description: 潮州生蚝批发在线询价：电话、微信、WhatsApp，全渠道快速沟通。
+
+## 5. 生蚝批发 | 整件报价 | shenghaopifa.online
+- URL: http://shenghaopifa.online/
+- H1: 生蚝整件批发 面向餐饮与渠道采购
+- Description: 生蚝产地批发网站，主供台山生蚝整件与牡蛎100斤装，支持餐饮店、烧烤店、海鲜酒楼、商超、批发商采购。
+- Main Sections: 核心卖点 | 微信扫码咨询 | 热门报价（整件） | 为什么选我们
+
+## 6. 隐私政策 | shenghaopifa.online
+- URL: http://shenghaopifa.online/privacy.html
+- H1: 隐私政策
+- Description: 潮州生蚝批发网站隐私政策说明。
+
+## 7. 产品中心 | 生蚝批发规格与整件报价
+- URL: http://shenghaopifa.online/products.html
+- H1: 产品中心（整件报价）
+- Description: 生蚝批发产品中心：精品台山生蚝整件报价、牡蛎大中小蚝100斤装报价、生蚝肉8-12元/斤（30斤起发）。
+- Main Sections: 精品台山生蚝报价（整件） | 牡蛎大中小蚝报价（100斤装） | 生蚝肉批发报价 | 快速加入询价单

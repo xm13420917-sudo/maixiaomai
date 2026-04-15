@@ -1,0 +1,43 @@
+﻿name: GEO Automation
+
+on:
+  push:
+    branches: ["main"]
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  geo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build GEO assets
+        run: |
+          python scripts/geo_automation.py \
+            --site-url "http://shenghaopifa.online" \
+            --brand "生蚝产地批发" \
+            --summary "专注生蚝整件批发报价与B2B询价，面向餐饮与渠道采购。" \
+            --ping
+
+      - name: Commit generated files on push
+        if: github.event_name == 'push'
+        run: |
+          if [[ -n "$(git status --porcelain llms.txt llms-full.txt geo-feed.json sitemap.xml robots.txt indexnow-key.txt)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add llms.txt llms-full.txt geo-feed.json sitemap.xml robots.txt indexnow-key.txt
+            git commit -m "chore: auto-update GEO assets"
+            git push
+          else
+            echo "No GEO asset changes to commit."
+          fi
