@@ -88,8 +88,55 @@ def generate_sitemap(root: Path, site_url: str, pages: list[dict]) -> None:
 def generate_robots(root: Path, site_url: str) -> None:
     robots_path = root / "robots.txt"
     desired_lines = [
+        "# Global default",
         "User-agent: *",
         "Allow: /",
+        "",
+        "# Tier 1 AI crawlers (recommended allow)",
+        "User-agent: GPTBot",
+        "Allow: /",
+        "",
+        "User-agent: OAI-SearchBot",
+        "Allow: /",
+        "",
+        "User-agent: ChatGPT-User",
+        "Allow: /",
+        "",
+        "User-agent: ClaudeBot",
+        "Allow: /",
+        "",
+        "User-agent: PerplexityBot",
+        "Allow: /",
+        "",
+        "# Tier 2 AI crawlers (recommended allow)",
+        "User-agent: Google-Extended",
+        "Allow: /",
+        "",
+        "User-agent: GoogleOther",
+        "Allow: /",
+        "",
+        "User-agent: Applebot-Extended",
+        "Allow: /",
+        "",
+        "User-agent: Amazonbot",
+        "Allow: /",
+        "",
+        "User-agent: FacebookBot",
+        "Allow: /",
+        "",
+        "# Selective training crawlers",
+        "User-agent: anthropic-ai",
+        "Allow: /",
+        "",
+        "User-agent: cohere-ai",
+        "Allow: /",
+        "",
+        "User-agent: Bytespider",
+        "Disallow: /",
+        "",
+        "User-agent: CCBot",
+        "Disallow: /",
+        "",
         f"Sitemap: {site_url.rstrip('/')}/sitemap.xml",
     ]
     robots_path.write_text("\n".join(desired_lines) + "\n", encoding="utf-8")
@@ -169,6 +216,11 @@ def ping_bing_sitemap(site_url: str) -> None:
     try:
         urllib.request.urlopen(endpoint, timeout=20)
         print("[ping] Bing sitemap ping success")
+    except urllib.error.HTTPError as exc:
+        if exc.code == 410:
+            print("[ping] Bing sitemap ping deprecated (410 Gone); skip.")
+        else:
+            print(f"[ping] Bing sitemap ping failed: HTTP {exc.code}")
     except Exception as exc:
         print(f"[ping] Bing sitemap ping failed: {exc}")
 

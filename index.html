@@ -20,13 +20,37 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WholesaleStore",
-        "name": "生蚝产地批发",
-        "url": "http://shenghaopifa.online/",
-        "telephone": "+86-18125834755",
-        "areaServed": "CN",
-        "description": "生蚝整件批发，默认100斤起发，生蚝肉30斤起发。",
-        "sameAs": ["http://shenghaopifa.online/products.html"]
+        "@graph": [
+          {
+            "@type": "WholesaleStore",
+            "@id": "http://shenghaopifa.online/#organization",
+            "name": "生蚝产地批发",
+            "url": "http://shenghaopifa.online/",
+            "telephone": "+86-18125834755",
+            "areaServed": "CN",
+            "description": "生蚝整件批发，默认100斤起发，生蚝肉30斤起发。",
+            "sameAs": ["http://shenghaopifa.online/products.html"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "http://shenghaopifa.online/#website",
+            "url": "http://shenghaopifa.online/",
+            "name": "生蚝产地批发",
+            "description": "潮州与台山生蚝批发网站，支持整件询价与长期供货。",
+            "publisher": {
+              "@id": "http://shenghaopifa.online/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "http://shenghaopifa.online/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            },
+            "inLanguage": "zh-CN"
+          }
+        ]
       }
     </script>
   </head>
