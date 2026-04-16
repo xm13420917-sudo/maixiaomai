@@ -1,6 +1,6 @@
 # 生蚝产地批发 Full Content Map
 
-Generated from repository revision: ab07c6f
+Generated from repository revision: 4600e12
 
 ## 1. 关于我们 | 汫洲生蚝历史与供应链
 - URL: https://shenghaopifa.online/about.html
@@ -40,3 +40,9 @@ Generated from repository revision: ab07c6f
 - H1: 产品中心（整件报价）
 - Description: 生蚝批发产品中心：精品台山生蚝整件报价、牡蛎大中小蚝100斤装报价、生蚝肉8-12元/斤（30斤起发）。
 - Main Sections: 精品台山生蚝报价（整件） | 牡蛎大中小蚝报价（100斤装） | 生蚝肉批发报价 | 快速加入询价单
+
+## 8. 全国地区 | 烧烤生蚝批发覆盖城市与区县
+- URL: https://shenghaopifa.online/regions.html
+- H1: 全国地区烧烤生蚝批发覆盖
+- Description: 全国地区烧烤生蚝批发词页，覆盖省、市、区县关键词，统一联系 18125834755（微信同号）
+- Main Sections: 北京市 | 天津市 | 河北省 | 山西省 | 内蒙古自治区 | 辽宁省

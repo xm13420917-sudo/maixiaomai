@@ -478,6 +478,46 @@ tr:last-child td {
   font-size: 12px;
   color: #6d7b88;
 }
+.province-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.province-card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #123149;
+}
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.city-box {
+  border: 1px dashed #d7e3ef;
+  border-radius: 12px;
+  background: #f9fcff;
+  padding: 12px;
+}
+.city-box h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #1c4564;
+}
+.region-keywords {
+  margin: 0;
+  padding-left: 18px;
+  column-count: 2;
+  column-gap: 22px;
+}
+.region-keywords li {
+  font-size: 13px;
+  color: #2a4257;
+  margin-bottom: 4px;
+  break-inside: avoid;
+}
 .footer {
   margin-top: 30px;
   background: #071d30;
@@ -560,8 +600,12 @@ tr:last-child td {
   .grid-2,
   .contact-grid,
   .form-grid,
-  .logo-wall {
+  .logo-wall,
+  .city-grid {
     grid-template-columns: 1fr;
+  }
+  .region-keywords {
+    column-count: 1;
   }
   .topbar .container {
     flex-direction: column;
