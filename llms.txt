@@ -3,16 +3,16 @@
 > 专注生蚝整件批发报价与B2B询价，面向餐饮与渠道采购。
 
 ## Canonical Website
-- http://shenghaopifa.online/
+- https://shenghaopifa.online/
 
 ## Key Pages
-- [关于我们 | 汫洲生蚝历史与供应链](http://shenghaopifa.online/about.html) - 了解潮州饶平汫洲生蚝历史、养殖优势、供应链能力与团队。
-- [批发优势 | 新鲜度、价格、物流、售后](http://shenghaopifa.online/advantages.html) - 潮州生蚝批发优势：鲜度保障、价格体系、冷链物流、售后机制。
-- [新闻博客 | 生蚝知识与季节供应](http://shenghaopifa.online/blog.html) - 潮州生蚝知识、季节供应节奏、菜谱推荐与采购建议。
-- [联系我们 | 在线询价 | 潮州生蚝批发](http://shenghaopifa.online/contact.html) - 潮州生蚝批发在线询价：电话、微信、WhatsApp，全渠道快速沟通。
-- [生蚝批发 | 整件报价 | shenghaopifa.online](http://shenghaopifa.online/) - 生蚝产地批发网站，主供台山生蚝整件与牡蛎100斤装，支持餐饮店、烧烤店、海鲜酒楼、商超、批发商采购。
-- [隐私政策 | shenghaopifa.online](http://shenghaopifa.online/privacy.html) - 潮州生蚝批发网站隐私政策说明。
-- [产品中心 | 生蚝批发规格与整件报价](http://shenghaopifa.online/products.html) - 生蚝批发产品中心：精品台山生蚝整件报价、牡蛎大中小蚝100斤装报价、生蚝肉8-12元/斤（30斤起发）。
+- [关于我们 | 汫洲生蚝历史与供应链](https://shenghaopifa.online/about.html) - 了解潮州饶平汫洲生蚝历史、养殖优势、供应链能力与团队。
+- [批发优势 | 新鲜度、价格、物流、售后](https://shenghaopifa.online/advantages.html) - 潮州生蚝批发优势：鲜度保障、价格体系、冷链物流、售后机制。
+- [新闻博客 | 生蚝知识与季节供应](https://shenghaopifa.online/blog.html) - 潮州生蚝知识、季节供应节奏、菜谱推荐与采购建议。
+- [联系我们 | 在线询价 | 潮州生蚝批发](https://shenghaopifa.online/contact.html) - 潮州生蚝批发在线询价：电话、微信、WhatsApp，全渠道快速沟通。
+- [生蚝批发 | 整件报价 | shenghaopifa.online](https://shenghaopifa.online/) - 生蚝产地批发网站，主供台山生蚝整件与牡蛎100斤装，支持餐饮店、烧烤店、海鲜酒楼、商超、批发商采购。
+- [隐私政策 | shenghaopifa.online](https://shenghaopifa.online/privacy.html) - 潮州生蚝批发网站隐私政策说明。
+- [产品中心 | 生蚝批发规格与整件报价](https://shenghaopifa.online/products.html) - 生蚝批发产品中心：精品台山生蚝整件报价、牡蛎大中小蚝100斤装报价、生蚝肉8-12元/斤（30斤起发）。
 
 ## GEO Signals
 - Structured data is available on core pages.

@@ -5,7 +5,7 @@
   "pages": [
     {
       "title": "关于我们 | 汫洲生蚝历史与供应链",
-      "url": "http://shenghaopifa.online/about.html",
+      "url": "https://shenghaopifa.online/about.html",
       "description": "了解潮州饶平汫洲生蚝历史、养殖优势、供应链能力与团队。",
       "h1": "关于我们",
       "sections": [
@@ -15,7 +15,7 @@
     },
     {
       "title": "批发优势 | 新鲜度、价格、物流、售后",
-      "url": "http://shenghaopifa.online/advantages.html",
+      "url": "https://shenghaopifa.online/advantages.html",
       "description": "潮州生蚝批发优势：鲜度保障、价格体系、冷链物流、售后机制。",
       "h1": "批发优势 / 为什么选我们",
       "sections": [
@@ -24,21 +24,21 @@
     },
     {
       "title": "新闻博客 | 生蚝知识与季节供应",
-      "url": "http://shenghaopifa.online/blog.html",
+      "url": "https://shenghaopifa.online/blog.html",
       "description": "潮州生蚝知识、季节供应节奏、菜谱推荐与采购建议。",
       "h1": "新闻 / 博客",
       "sections": []
     },
     {
       "title": "联系我们 | 在线询价 | 潮州生蚝批发",
-      "url": "http://shenghaopifa.online/contact.html",
+      "url": "https://shenghaopifa.online/contact.html",
       "description": "潮州生蚝批发在线询价：电话、微信、WhatsApp，全渠道快速沟通。",
       "h1": "联系我们 / 在线询价",
       "sections": []
     },
     {
       "title": "生蚝批发 | 整件报价 | shenghaopifa.online",
-      "url": "http://shenghaopifa.online/",
+      "url": "https://shenghaopifa.online/",
       "description": "生蚝产地批发网站，主供台山生蚝整件与牡蛎100斤装，支持餐饮店、烧烤店、海鲜酒楼、商超、批发商采购。",
       "h1": "生蚝整件批发 面向餐饮与渠道采购",
       "sections": [
@@ -50,14 +50,14 @@
     },
     {
       "title": "隐私政策 | shenghaopifa.online",
-      "url": "http://shenghaopifa.online/privacy.html",
+      "url": "https://shenghaopifa.online/privacy.html",
       "description": "潮州生蚝批发网站隐私政策说明。",
       "h1": "隐私政策",
       "sections": []
     },
     {
       "title": "产品中心 | 生蚝批发规格与整件报价",
-      "url": "http://shenghaopifa.online/products.html",
+      "url": "https://shenghaopifa.online/products.html",
       "description": "生蚝批发产品中心：精品台山生蚝整件报价、牡蛎大中小蚝100斤装报价、生蚝肉8-12元/斤（30斤起发）。",
       "h1": "产品中心（整件报价）",
       "sections": [
